@@ -100,6 +100,7 @@
     <Compile Include="DisableCache.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="AbstractTypeCreationContext.cs" />
+    <Compile Include="Factories\DependencyResolverFactory.cs" />
     <Compile Include="FakePropertyInfo.cs" />
     <Compile Include="IDependencyRegistrar.cs" />
     <Compile Include="IDependencyResolver.cs" />

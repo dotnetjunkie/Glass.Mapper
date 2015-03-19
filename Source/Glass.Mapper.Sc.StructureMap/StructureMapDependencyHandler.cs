@@ -60,12 +60,9 @@ namespace Glass.Mapper.Sc.StructureMap
         /// <typeparam name="T"></typeparam>
         /// <param name="args">The args.</param>
         /// <returns>``0.</returns>
-        public T Resolve<T>(IDictionary<string, object> args = null)
+        public T Resolve<T>() where T:class
         {
-            ExplicitArguments explicitArguments = new ExplicitArguments(args);
-            return args == null 
-                ? Container.GetInstance<T>()
-                : Container.GetInstance<T>(explicitArguments);
+            return Container.GetInstance<T>();
         }
 
         /// <summary>
@@ -73,7 +70,7 @@ namespace Glass.Mapper.Sc.StructureMap
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns>IEnumerable{``0}.</returns>
-        public IEnumerable<T> ResolveAll<T>()
+        public IEnumerable<T> ResolveAll<T>()  where T:class
         {
             return Container.GetAllInstances<T>();
         }

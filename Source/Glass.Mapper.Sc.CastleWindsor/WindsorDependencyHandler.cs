@@ -60,11 +60,9 @@ namespace Glass.Mapper.Sc.CastleWindsor
         /// <typeparam name="T"></typeparam>
         /// <param name="args">The args.</param>
         /// <returns>``0.</returns>
-        public T Resolve<T>(IDictionary<string, object> args = null)
+        public T Resolve<T>() where T:class
         {
-            return args == null 
-                ? Container.Resolve<T>() 
-                : Container.Resolve<T>((IDictionary) args);
+            return Container.Resolve<T>();
         }
 
         /// <summary>
@@ -72,8 +70,8 @@ namespace Glass.Mapper.Sc.CastleWindsor
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <returns>IEnumerable{``0}.</returns>
-        public IEnumerable<T> ResolveAll<T>()
-        {
+        public IEnumerable<T> ResolveAll<T>() where T:class
+         {
             return Container.ResolveAll<T>();
         }
 
