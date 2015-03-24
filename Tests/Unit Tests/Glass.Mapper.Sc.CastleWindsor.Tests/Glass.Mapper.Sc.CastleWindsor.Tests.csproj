@@ -62,10 +62,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Source\Glass.Mapper.Sc.CastleWindsor\Glass.Mapper.Sc.CastleWindsor.csproj">
-      <Project>{54a63d42-1614-4b8f-9df5-8f1d2998db9d}</Project>
-      <Name>Glass.Mapper.Sc.CastleWindsor</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\Source\Glass.Mapper\Glass.Mapper.csproj">
       <Project>{566109ED-A88A-467E-BDDB-BBF7F831A006}</Project>
       <Name>Glass.Mapper</Name>

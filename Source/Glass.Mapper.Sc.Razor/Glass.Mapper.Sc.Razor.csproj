@@ -12,7 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>    
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,12 +40,10 @@
   <!--End: Must come after all PropertyGroups -->
   <ItemGroup>
     <Reference Include="Sitecore.Kernel">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(ScDir)\Sitecore.Kernel.dll</HintPath>
+      <HintPath>$(ScDir)Sitecore.Kernel.dll</HintPath>
     </Reference>
     <Reference Include="Sitecore.Mvc">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>$(ScDir)\Sitecore.Mvc.dll</HintPath>
+      <HintPath>$(ScDir)Sitecore.Mvc.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup Condition="'$(Mvc)' == '4'">
